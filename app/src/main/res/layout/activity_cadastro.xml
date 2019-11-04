@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/idSexoMasc"
+        android:layout_width="115dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Masculino"
+        app:layout_constraintEnd_toEndOf="@+id/idDtNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/idDtNascimento" />
+
+    <EditText
+        android:id="@+id/idRg"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="RG"
+        app:layout_constraintEnd_toEndOf="@+id/idCpf"
+        app:layout_constraintStart_toStartOf="@+id/idCpf"
+        app:layout_constraintTop_toBottomOf="@+id/idCpf" />
+
+    <EditText
+        android:id="@+id/idDtNascimento"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Data de Nascimento"
+        app:layout_constraintEnd_toEndOf="@+id/idRg"
+        app:layout_constraintStart_toStartOf="@+id/idRg"
+        app:layout_constraintTop_toBottomOf="@+id/idRg" />
+
+    <Button
+        android:id="@+id/proximo_btn"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="Proximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idSenha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idSenha"
+        app:layout_constraintTop_toBottomOf="@+id/idSenha"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome"
+        app:layout_constraintEnd_toEndOf="@+id/idVoltar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/idVoltar" />
+
+    <EditText
+        android:id="@+id/idTelefone"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Telefone"
+        app:layout_constraintEnd_toEndOf="@+id/idDtNascimento"
+        app:layout_constraintStart_toStartOf="@+id/idDtNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/idSexoMasc" />
+
+    <EditText
+        android:id="@+id/idLogin"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="E-mail"
+        app:layout_constraintEnd_toEndOf="@+id/idTelefone"
+        app:layout_constraintStart_toStartOf="@+id/idTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/idTelefone" />
+
+    <ImageView
+        android:id="@+id/idVoltar"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <EditText
+        android:id="@+id/idSenha"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="123456"
+        app:layout_constraintEnd_toEndOf="@+id/idLogin"
+        app:layout_constraintStart_toStartOf="@+id/idLogin"
+        app:layout_constraintTop_toBottomOf="@+id/idLogin" />
+
+    <CheckBox
+        android:id="@+id/idSexo"
+        android:layout_width="115dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Feminino"
+        app:layout_constraintEnd_toStartOf="@+id/idSexoMasc"
+        app:layout_constraintStart_toStartOf="@+id/idDtNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/idDtNascimento" />
+
+    <EditText
+        android:id="@+id/idCpf"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CPF"
+        app:layout_constraintEnd_toEndOf="@+id/nome"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
