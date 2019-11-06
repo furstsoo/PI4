@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">ProjetoIntegrador</string>
+    <string name="app_name">Search Room8 </string>
     <string name="todo">TODO</string>
+
+    <string-array name="tp_cadastro">
+        <item>Ambos</item>
+        <item>Locatario</item>
+        <item>Locador</item>
+    </string-array>
 </resources>

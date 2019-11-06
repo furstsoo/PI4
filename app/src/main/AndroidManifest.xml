@@ -16,12 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroActivity">
+        <activity android:name=".CadastroActivity"></activity>
+        <activity android:name=".CadastrolocalActivity"></activity>
+        <activity android:name=".LocalActivity"></activity>
 
-        </activity>
-        <activity android:name=".CadastrolocalActivity">
-
-        </activity>
     </application>
 
 </manifest>

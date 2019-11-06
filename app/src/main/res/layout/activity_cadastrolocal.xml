@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/idVoltar"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -23,141 +23,60 @@
         tools:layout_conversion_absoluteHeight="43dp"
         tools:layout_conversion_absoluteWidth="43dp" />
 
-    <EditText
-        android:id="@+id/idTituloLocal"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
+    <Button
+        android:id="@+id/btnProximoLocalCad"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Local"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="350dp" />
-
-    <EditText
-        android:id="@+id/idCEP"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="CEP"
-        app:layout_constraintEnd_toEndOf="@+id/idTituloLocal"
-        app:layout_constraintStart_toStartOf="@+id/idTituloLocal"
-        app:layout_constraintTop_toBottomOf="@+id/idTituloLocal"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="178dp" />
-
-    <EditText
-        android:id="@+id/idEnd"
-        android:layout_width="250dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Endereço"
-        app:layout_constraintEnd_toEndOf="@+id/idCEP"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/idCEP"
-        app:layout_constraintTop_toBottomOf="@+id/idCEP"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="350dp" />
-
-    <EditText
-        android:id="@+id/idComplemento"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Complemento"
-        app:layout_constraintEnd_toEndOf="@+id/idEnd"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/idEnd"
-        app:layout_constraintTop_toBottomOf="@+id/idEnd"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="250dp" />
-
-    <EditText
-        android:id="@+id/textEstado"
-        android:layout_width="70dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Nº"
-        app:layout_constraintEnd_toEndOf="@+id/idCEP"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/idEnd"
-        app:layout_constraintTop_toBottomOf="@+id/idCEP"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="65dp" />
-
-    <EditText
-        android:id="@+id/textBairro"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Bairro"
-        app:layout_constraintEnd_toEndOf="@+id/idComplemento"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="@+id/idComplemento"
-        app:layout_constraintTop_toBottomOf="@+id/idComplemento"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="250dp" />
-
-    <EditText
-        android:id="@+id/editCidade"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Cidade"
-        app:layout_constraintEnd_toEndOf="@+id/textBairro"
-        app:layout_constraintStart_toStartOf="@+id/textBairro"
-        app:layout_constraintTop_toBottomOf="@+id/textBairro" />
-
-    <EditText
-        android:id="@+id/editEstado"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Estado"
-        app:layout_constraintEnd_toEndOf="@+id/editCidade"
-        app:layout_constraintStart_toStartOf="@+id/editCidade"
-        app:layout_constraintTop_toBottomOf="@+id/editCidade" />
-
-    <Button
-        android:id="@+id/btn_px"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="Proximo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editEstado"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editEstado"
-        app:layout_constraintTop_toBottomOf="@+id/idVoltar"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintEnd_toEndOf="@+id/taDescricao"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/taDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/taDescricao"
+        app:layout_constraintVertical_bias="0.122"
         tools:layout_conversion_absoluteHeight="43dp"
         tools:layout_conversion_absoluteWidth="373dp" />
+
+    <EditText
+        android:id="@+id/taDescricao"
+        android:layout_width="360dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:text="Descrição"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toEndOf="@+id/taTitulo"
+        app:layout_constraintStart_toStartOf="@+id/taTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/taTitulo" />
+
+    <EditText
+        android:id="@+id/taTitulo"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollHorizontally="false"
+        android:text="Titulo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toEndOf="@+id/idVoltar"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="@+id/idVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/idVoltar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
