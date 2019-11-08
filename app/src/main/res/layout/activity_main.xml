@@ -8,45 +8,22 @@
 
     <ImageView
         android:id="@+id/idLogo"
-        android:layout_width="273dp"
-        android:layout_height="209dp"
+        android:layout_width="342dp"
+        android:layout_height="236dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/tLogoEscrito"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
-    <EditText
-        android:id="@+id/idEmail"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="E-mail"
-        app:layout_constraintEnd_toEndOf="@+id/idLogo"
-        app:layout_constraintStart_toStartOf="@+id/idLogo"
-        app:layout_constraintTop_toBottomOf="@+id/idLogo" />
-
-    <EditText
-        android:id="@+id/idSenha"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="56dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="Senha"
-        app:layout_constraintEnd_toEndOf="@+id/idEmail"
-        app:layout_constraintStart_toStartOf="@+id/idEmail"
-        app:layout_constraintTop_toBottomOf="@+id/idEmail" />
-
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tLogoEscrito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,37 +37,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/pular_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:id="@+id/loginBtn"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="96dp"
-        android:text="Pular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cadastro_btn"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toStartOf="@+id/idSenha"
-        app:layout_constraintTop_toBottomOf="@+id/idSenha"
-        app:layout_constraintVertical_bias="0.506" />
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/idLogo"
+        app:layout_constraintStart_toStartOf="@+id/idLogo"
+        app:layout_constraintTop_toBottomOf="@+id/idLogo" />
 
     <Button
-        android:id="@+id/cadastro_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:id="@+id/cadastroBtn"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Cadastre-se"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <Button
+        android:id="@+id/feedBtn"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="96dp"
-        android:text="Cadastro"
+        android:layout_marginBottom="8dp"
+        android:text="Feed"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/idSenha"
-        app:layout_constraintStart_toEndOf="@+id/pular_btn"
-        app:layout_constraintTop_toBottomOf="@+id/idSenha" />
+        app:layout_constraintEnd_toEndOf="@+id/cadastroBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cadastroBtn"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

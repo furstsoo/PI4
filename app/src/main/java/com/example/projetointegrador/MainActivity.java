@@ -14,15 +14,26 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    Button cadastro_btn = findViewById(R.id.cadastro_btn);
+    Button loginBtn = findViewById(R.id.loginBtn);
+    Button cadastroBtn = findViewById(R.id.cadastroBtn);
+    Button feedBtn = findViewById(R.id.feedBtn);
 
 
-    cadastro_btn.setOnClickListener(new View.OnClickListener() {
+
+    cadastroBtn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
 
-        Intent intent = new Intent(MainActivity.this, CadastroActivity.class);
-        startActivity(intent);
+        Intent intentCad = new Intent(MainActivity.this, CadastroActivity.class);
+        startActivity(intentCad);
+      }
+    });
+
+    loginBtn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Intent intentLogin = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intentLogin);
       }
     });
 

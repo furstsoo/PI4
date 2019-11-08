@@ -6,23 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".CadastrolocalActivity">
 
-    <ImageView
-        android:id="@+id/idVoltar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="43dp" />
-
     <Button
         android:id="@+id/btnProximoLocalCad"
         android:layout_width="360dp"
@@ -64,7 +47,11 @@
         android:id="@+id/taTitulo"
         android:layout_width="360dp"
         android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
         android:background="@null"
         android:gravity="top|left"
         android:inputType="textMultiLine"
@@ -74,9 +61,8 @@
         android:scrollHorizontally="false"
         android:text="Titulo"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        app:layout_constraintEnd_toEndOf="@+id/idVoltar"
-        app:layout_constraintHorizontal_bias="0.009"
-        app:layout_constraintStart_toStartOf="@+id/idVoltar"
-        app:layout_constraintTop_toBottomOf="@+id/idVoltar" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
