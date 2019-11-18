@@ -18,20 +18,26 @@ public class CadastroActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_cadastro);
 
-    Button proximo_btn = findViewById(R.id.btnProximoCadUser);
-
+    Button salvar_btn = findViewById(R.id.btnProximoCadUser);
     tpCadastro = findViewById(R.id.spinTp_cadastro);
 
     ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.tp_cadastro, android.R.layout.simple_spinner_item);
     tpCadastro.setAdapter(adapter);
 
 
-    proximo_btn.setOnClickListener(new View.OnClickListener() {
+    salvar_btn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
+        if(tpCadastro.getSelectedItemPosition() == 0){
+          Intent intent = new Intent(CadastroActivity.this, FeedActivity.class);
+          startActivity(intent);
+        }
+        else{
+          Intent intent = new Intent(CadastroActivity.this, CadastrolocalActivity.class);
+          startActivity(intent);
+        }
 
-        Intent intent = new Intent(CadastroActivity.this, CadastrolocalActivity.class);
-        startActivity(intent);
+
       }
     });
 

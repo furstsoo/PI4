@@ -3,8 +3,8 @@
     <string name="todo">TODO</string>
 
     <string-array name="tp_cadastro">
-        <item>Ambos</item>
         <item>Locatario</item>
         <item>Locador</item>
+        <item>Ambos</item>
     </string-array>
 </resources>

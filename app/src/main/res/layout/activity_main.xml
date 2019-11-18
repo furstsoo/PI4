@@ -4,54 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/padrao2"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/idLogo"
-        android:layout_width="342dp"
-        android:layout_height="236dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tLogoEscrito"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <TextView
-        android:id="@+id/tLogoEscrito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="logo_escrito"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="360dp"
         android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorPrimary"
         android:text="Login"
-        app:layout_constraintEnd_toEndOf="@+id/idLogo"
-        app:layout_constraintStart_toStartOf="@+id/idLogo"
-        app:layout_constraintTop_toBottomOf="@+id/idLogo" />
+        android:textColor="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/cadastroBtn"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
         android:text="Cadastre-se"
+        android:textColor="@color/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="@+id/loginBtn"
         app:layout_constraintStart_toStartOf="@+id/loginBtn"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
@@ -64,13 +42,29 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
         android:text="Feed"
+        android:textColor="@color/ic_launcher_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/cadastroBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/cadastroBtn"
         app:layout_constraintTop_toBottomOf="@+id/cadastroBtn"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="409dp"
+        android:layout_height="284dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_sr8" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

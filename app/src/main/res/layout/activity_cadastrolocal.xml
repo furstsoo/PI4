@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastrolocalActivity">
+    tools:context=".CadastrolocalActivity"
+    android:background="@color/colorBackground">
 
     <Button
         android:id="@+id/btnProximoLocalCad"
@@ -15,6 +16,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="Proximo"
+        android:textColor="@color/ic_launcher_background"
+        android:background="@color/colorPrimary"
+        app:fontFamily="@font/josefin_sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/taDescricao"
         app:layout_constraintHorizontal_bias="1.0"
@@ -39,6 +43,7 @@
         android:scrollHorizontally="false"
         android:text="Descrição"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        app:fontFamily="@font/josefin_sans"
         app:layout_constraintEnd_toEndOf="@+id/taTitulo"
         app:layout_constraintStart_toStartOf="@+id/taTitulo"
         app:layout_constraintTop_toBottomOf="@+id/taTitulo" />
@@ -61,6 +66,7 @@
         android:scrollHorizontally="false"
         android:text="Titulo"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        app:fontFamily="@font/josefin_sans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
