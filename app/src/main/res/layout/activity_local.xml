@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
     tools:context=".LocalActivity">
 
     <EditText
@@ -17,109 +16,102 @@
         android:layout_marginEnd="83dp"
         android:layout_marginRight="83dp"
         android:ems="10"
+        android:hint="CEP"
         android:inputType="textPostalAddress"
-        android:text="CEP"
-        app:fontFamily="@font/josefin_sans"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/eEndereco"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Endereço"
         android:inputType="textPersonName"
-        android:text="Endereço"
-        app:fontFamily="@font/josefin_sans"
         app:layout_constraintEnd_toEndOf="@+id/eCEP"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/eCEP"
         app:layout_constraintTop_toBottomOf="@+id/eCEP" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/eNumero"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Nº"
         android:inputType="number"
-        android:text="Nº"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/eEndereco"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@+id/eEndereco"
+        app:layout_constraintTop_toBottomOf="@+id/eEndereco" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/eComplemento"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Complemento"
         android:inputType="textPersonName"
-        android:text="Complemento"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/eNumero"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintStart_toStartOf="@+id/eNumero"
+        app:layout_constraintTop_toBottomOf="@+id/eNumero" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/eBairro"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Bairro"
         android:inputType="textPersonName"
-        android:text="Bairro"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintEnd_toEndOf="@+id/eComplemento"
+        app:layout_constraintStart_toStartOf="@+id/eComplemento"
+        app:layout_constraintTop_toBottomOf="@+id/eComplemento" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/eCidade"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Cidade"
         android:inputType="textPersonName"
-        android:text="Cidade"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText5"
+        app:layout_constraintEnd_toEndOf="@+id/eBairro"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText5"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintStart_toStartOf="@+id/eBairro"
+        app:layout_constraintTop_toBottomOf="@+id/eBairro" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/eEstado"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Estado"
         android:inputType="textPersonName"
-        android:text="Estado"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="@+id/eCidade"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText6"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintStart_toStartOf="@+id/eCidade"
+        app:layout_constraintTop_toBottomOf="@+id/eCidade" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/ePonRef"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="Ponto de referencia"
         android:inputType="textPersonName"
-        android:text="Ponto de  referência"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText7"
+        app:layout_constraintEnd_toEndOf="@+id/eEstado"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText7"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+        app:layout_constraintStart_toStartOf="@+id/eEstado"
+        app:layout_constraintTop_toBottomOf="@+id/eEstado" />
 
     <Button
         android:id="@+id/btnProxompLocal"
@@ -127,14 +119,24 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
-        android:text="Proximo"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/ic_launcher_background"
-        app:fontFamily="@font/josefin_sans"
+        android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText8"
+        app:layout_constraintEnd_toEndOf="@+id/ePonRef"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText8"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
+        app:layout_constraintStart_toStartOf="@+id/ePonRef"
+        app:layout_constraintTop_toBottomOf="@+id/ePonRef"
         app:layout_constraintVertical_bias="0.19999999" />
+
+    <ImageButton
+        android:id="@+id/btnCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/eCEP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/eCEP"
+        app:layout_constraintTop_toTopOf="@+id/eCEP"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
