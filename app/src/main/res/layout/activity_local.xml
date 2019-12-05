@@ -7,39 +7,60 @@
     android:background="@color/colorBackground"
     tools:context=".LocalActivity">
 
-    <EditText
-        android:id="@+id/eCEP"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginRight="83dp"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        android:text="CEP"
-        app:fontFamily="@font/josefin_sans"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="579dp"
+        android:layout_marginBottom="18dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/iBtnHomeLocal"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+        app:layout_constraintStart_toStartOf="@+id/toolbar4"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:srcCompat="@mipmap/home" />
+
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/eCEP"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="CEP"
+        app:fontFamily="@font/josefin_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eEndereco"
         android:layout_width="360dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Endereço"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/eCEP"
+        app:layout_constraintEnd_toEndOf="@+id/btnVisu"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/eCEP"
         app:layout_constraintTop_toBottomOf="@+id/eCEP" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/eNumber"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -47,13 +68,13 @@
         android:inputType="number"
         android:text="Nº"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/eEndereco"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@+id/eEndereco"
+        app:layout_constraintTop_toBottomOf="@+id/eEndereco" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/eComplemento"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -61,13 +82,13 @@
         android:inputType="textPersonName"
         android:text="Complemento"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/eNumber"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintStart_toStartOf="@+id/eNumber"
+        app:layout_constraintTop_toBottomOf="@+id/eNumber" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/eBairro"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -75,12 +96,12 @@
         android:inputType="textPersonName"
         android:text="Bairro"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintEnd_toEndOf="@+id/eComplemento"
+        app:layout_constraintStart_toStartOf="@+id/eComplemento"
+        app:layout_constraintTop_toBottomOf="@+id/eComplemento" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/eCidade"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -88,13 +109,13 @@
         android:inputType="textPersonName"
         android:text="Cidade"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText5"
+        app:layout_constraintEnd_toEndOf="@+id/eBairro"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText5"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintStart_toStartOf="@+id/eBairro"
+        app:layout_constraintTop_toBottomOf="@+id/eBairro" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/eEstado"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -102,13 +123,13 @@
         android:inputType="textPersonName"
         android:text="Estado"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="@+id/eCidade"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText6"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintStart_toStartOf="@+id/eCidade"
+        app:layout_constraintTop_toBottomOf="@+id/eCidade" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/eReferencia"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -116,13 +137,13 @@
         android:inputType="textPersonName"
         android:text="Ponto de  referência"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintEnd_toEndOf="@+id/editText7"
+        app:layout_constraintEnd_toEndOf="@+id/eEstado"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText7"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+        app:layout_constraintStart_toStartOf="@+id/eEstado"
+        app:layout_constraintTop_toBottomOf="@+id/eEstado" />
 
     <Button
-        android:id="@+id/btnProxompLocal"
+        android:id="@+id/btnProxFotos"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -132,9 +153,26 @@
         android:textColor="@color/ic_launcher_background"
         app:fontFamily="@font/josefin_sans"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText8"
+        app:layout_constraintEnd_toEndOf="@+id/eReferencia"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText8"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
+        app:layout_constraintStart_toStartOf="@+id/eReferencia"
+        app:layout_constraintTop_toBottomOf="@+id/eReferencia"
         app:layout_constraintVertical_bias="0.19999999" />
+
+    <Button
+        android:id="@+id/btnVisu"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@color/colorPrimary"
+        android:text="Buscar"
+        android:textColor="@color/ic_launcher_background"
+        app:fontFamily="@font/josefin_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eCEP"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

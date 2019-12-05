@@ -37,5 +37,13 @@ public class MainActivity extends AppCompatActivity {
       }
     });
 
+    feedBtn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Intent intentFeed = new Intent(MainActivity.this, FeedActivity.class);
+        startActivity(intentFeed);
+      }
+    });
+
   }
 }
