@@ -1,5 +1,7 @@
 package com.example.projetointegrador.adapter;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,7 +41,10 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     geralViewHolder.tTituloFeed.setText(geral.getLugar().getTitulo());
     geralViewHolder.tDescFeed.setText(geral.getLugar().getDescricao());
-    //geralViewHolder.iAnuncio.setImageBitmap(geral.getFotos().get(0).getImagem());
+    BitmapFactory.Options options = new BitmapFactory.Options();
+    options.inMutable = true;
+    Bitmap bmp = BitmapFactory.decodeByteArray(geral.getFotos().get(0).getImagem(), 0, geral.getFotos().get(0).getImagem().length, options);
+    geralViewHolder.iAnuncio.setImageBitmap(bmp);
 
 
   }

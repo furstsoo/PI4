@@ -18,16 +18,6 @@ public class FeedActivity extends AppCompatActivity {
 
     ImageButton btnAdd = findViewById(R.id.iBtnAdd),
             btnHome = findViewById(R.id.iBtnHome);
-/*    ImageView teste = findViewById(R.id.iTeste);
-
-    teste.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent intent = new Intent(FeedActivity.this, AnuncioActivity.class);
-        startActivity(intent);
-
-      }
-    });*/
 
     btnHome.setOnClickListener(new View.OnClickListener(){
 
